@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS "user" (
+	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"user_id"	INTEGER NOT NULL UNIQUE,
+	"locale"	TEXT NOT NULL
+);
+
+createNewIfNotExists:
+INSERT OR REPLACE INTO user(user_id,locale) VALUES (?,?);
+
+updateLocale:
+UPDATE user SET locale=? WHERE user_id=?;
+
+selectAll:
+SELECT * FROM user;
+
+containsId:
+SELECT EXISTS (SELECT 1 FROM user WHERE user_id = ?);
+
+getLocale:
+SELECT `locale` FROM user
+WHERE user_id = ?;

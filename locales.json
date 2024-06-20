@@ -1,0 +1,52 @@
+{
+  "default_locale": "ru",
+  "locales": [
+    {
+      "lang": "en",
+      "entries": {
+        "start": "Hi there! Let's look for ur 2FA configurations ...",
+        "locale_prompt": "Please specify your language:",
+        "locale_updated": "Locale updated!",
+        "ru": "Russian",
+        "en": "English",
+        "res_services_list": "Services list",
+        "res_add_service": "Add new service",
+        "res_add_service_name_prompt": "What should we call the service?",
+        "res_add_service_key_prompt": "Service 2FA key?",
+        "no_rules_found": "The list of rules is empty",
+        "settings": "Settings",
+        "invalid_value": "Incorrect value",
+        "success": "Success!",
+        "delete": "Delete",
+        "canceled": "Canceled",
+        "cancel": "Cancel",
+        "res_lang": "Language",
+        "bot_settings": "Bot settings",
+        "main": "Main"
+      }
+    },
+    {
+      "lang": "ru",
+      "entries": {
+        "start": "Привет! Давай поищем твои 2FA конфиги ...",
+        "locale_prompt": "Пожалуйста, укажите ваш язык",
+        "locale_updated": "Локаль обновлена.",
+        "ru": "Русский",
+        "en": "Английский",
+        "res_services_list": "Список сервисов",
+        "res_add_service": "Добавить новый сервис",
+        "res_add_service_name_prompt": "Как назовем сервис?",
+        "res_add_service_key_prompt": "2FA ключ?",
+        "settings": "Настройки",
+        "invalid_value": "Неверное значение",
+        "success": "Готово!",
+        "delete": "Удалить",
+        "canceled": "Отменено",
+        "cancel": "Отменить",
+        "res_lang": "Язык",
+        "bot_settings": "Настройки бота",
+        "main": "Главная"
+      }
+    }
+  ]
+}

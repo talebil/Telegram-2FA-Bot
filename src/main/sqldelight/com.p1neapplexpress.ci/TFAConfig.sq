@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS "tfa_config" (
+                           	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                           	"user_id"	INTEGER NOT NULL,
+                           	"key"	TEXT NOT NULL,
+                           	"title"	TEXT NOT NULL
+                           );
+
+selectAll:
+SELECT * FROM tfa_config;
+
+getById:
+SELECT * FROM tfa_config
+WHERE "id" = ?;
+
+getByUserId:
+SELECT * FROM tfa_config
+WHERE "user_id" = ?;
+
+add:
+INSERT INTO "tfa_config"("id","user_id","key","title")
+VALUES (NULL,?,?,?);
+
+delete:
+DELETE FROM "tfa_config" WHERE "id" = ?;
